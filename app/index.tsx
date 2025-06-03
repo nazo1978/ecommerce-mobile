@@ -9,7 +9,8 @@ export default function HomeScreen(){
 
         <View>
             <FlatList data={products}
-            renderItem={({item}) => <ProductListItem product={item} />}     
+            renderItem={({item}) => 
+            <ProductListItem product={item} />}     
              />
         </View>
     );

@@ -12,15 +12,13 @@ import { ButtonText } from '../components/ui/button';
 
 
 
-export const ProductListItem = ({product}: {product: any}) => {
+export const ProductListItem = ({product}   : {product: any}) => {
     return (
         <Card className="p-5 rounded-lg max-w-[360px] m-3">
       <Image
-        source={{
-          uri: "https://gluestack.github.io/public-blog-video-assets/saree.png",
-        }}
+      source={{uri:product.image, width: 300, height: 300}}
         className="mb-6 h-[240px] w-full rounded-md aspect-[4/3]"
-        alt="image"
+        alt={'${product.name}image'}
       />
       <Text className="text-sm font-normal mb-2 text-typography-700">
         {product.name}
